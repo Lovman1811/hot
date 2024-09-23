@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.cleartrip.com/favicon.ico" alt="Cleartrip Logo">
+            <h1>cleartrip</h1>
+        </div>
+        <div class="login-signup">
+            <button id="loginBtn">Log in</button>
+            <button id="signupBtn">Sign up</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-container">
+            <h2>Search hotels</h2>
+            <p>Enjoy hassle-free bookings with Cleartrip</p>
+            <form class="search-form">
+                <input type="text" placeholder="Enter locality, landmark, city or hotel" required>
+                <input type="date">
+                <input type="date">
+                <select>
+                    <option>1 Room, 2 Adults</option>
+                    <option>2 Rooms, 4 Adults</option>
+                </select>
+                <button type="submit">Search hotels</button>
+            </form>
+        </section>
+
+        <aside class="offers-section">
+            <div class="offer last-minute-deals">
+                <h3>Mega price drop! Up to 40% off</h3>
+                <p>For check-ins today & tomorrow</p>
+                <button>Book Now</button>
+            </div>
+
+            <div class="more-offers">
+                <h3>More offers</h3>
+                <ul>
+                    <li>Up to 40% off on Hotels</li>
+                    <li>15% off for Flipkart & Myntra shoppers</li>
+                    <li>Flat 30% off at selected hotels</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Log in</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log in</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignup">&times;</span>
+            <h2>Sign up</h2>
+            <form id="signupForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Cleartrip for Business | Support</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
